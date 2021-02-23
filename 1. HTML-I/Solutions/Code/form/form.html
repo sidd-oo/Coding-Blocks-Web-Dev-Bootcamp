@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Application Form</h1>
+    </header>
+    <div class = "content">
+        <form action="" method="GET">
+           <fieldset>
+                <legend>Personal Details</legend>
+                <label for="FirstName">First Name :</label>
+                <input type="text" placeholder="Enter your first name" name="FirstName" required>
+                <br>
+
+                <label for="LastName">Last Name :</label>
+                <input type="text" placeholder="Enter your last name" name="LastName" required>
+                <br>
+
+                <label for="Gender">Gender :</label>
+                <input type="radio" name="Gender">
+                Male
+                <input type="radio" name="Gender">
+                Female
+                <input type="radio" name="Gender">
+                Others
+                <br>
+
+                <label for="DOB">Date of Birth :</label>
+                <input type="date" placeholder="Select your Date" name="DOB" required>
+                <br>
+
+                <label for="Nationality">Nationality :</label>
+                <select name="Nationality" id="">
+                    <option value="Indian">Indian</option>
+                    <option value="NRI">NRI</option>
+                </select>
+                <br>
+
+
+                <label for="Email">Email :</label>
+                <input type="text" placeholder="Enter your email" name="Email" required>
+                <br>
+
+                <label for="Phone">Phone number :</label>
+                <input type="tel" placeholder="Enter your 10-digit phone number" required>
+                <br>
+
+                <label for="Address">Address</label>
+                <textarea name="Address" id="" cols="30" rows="5">Enter your Address</textarea>
+            </fieldset>
+
+           <fieldset>
+               <legend>Academic Details</legend>
+               <table cellspacing ="5px" cellpadding= "5px">
+                   <thead>
+                       <tr>
+                           <th>Name of institution</th>
+                           <th>Board of institution</th>
+                           <th>Academic Year</th>
+                           <th>Percentage / C.G.P.A</th>
+                           <th>Marksheet</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                                <tr>
+                                    <td><input type="text" placeholder = "Name of institution" required></td>
+                                    <td><input type="text" placeholder = "Board of institution" required></td>
+                                    <td><input type="text" placeholder = "Academic Year" required></td>
+                                    <td><input type="number" placeholder = "Percentage / C.G.P.A" required></td>
+                                    <td><input type="file" placeholder="Upload File" required></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td><input type="text" placeholder = "Name of institution" required></td>
+                                    <td><input type="text" placeholder = "Board of institution" required></td>
+                                    <td><input type="text" placeholder = "Academic Year" required></td>
+                                    <td><input type="number" placeholder = "Percentage / C.G.P.A" required></td>
+                                    <td><input type="file" placeholder="Upload File" required></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td><input type="text" placeholder = "Name of institution" required></td>
+                                    <td><input type="text" placeholder = "Board of institution" required></td>
+                                    <td><input type="text" placeholder = "Academic Year" required></td>
+                                    <td><input type="number" placeholder = "Percentage / C.G.P.A" required></td>
+                                    <td><input type="file" placeholder="Upload File" required></td>
+                                </tr>
+                   </tbody>
+               </table>
+           </fieldset>
+
+           <fieldset>
+               <legend>Social Handles</legend>
+               <label for="LinkedIn">LinkedIn :</label>
+               <input type="text" placeholder="Enter your LinkedIn username" name = "LinkedIn" required>
+               <br>
+               
+               <label for="Github">Github :</label>
+               <input type="text" placeholder="Enter your Github username" name = "Github" required>
+               <br>
+
+               <label for="Dribble">Dribble :</label>
+               <input type="text" placeholder="Enter your Dribble username" name = "Dribble" required>
+           </fieldset>
+
+           <fieldset>
+               <legend>Declaration</legend>
+                <input type="checkbox" required>
+                <label for="agree-disagree">Agree: I do, hereby, declare all the above information is true. I will be help responsible if any of the information provided turn out to be false.</label>
+                
+                <br>
+           </fieldset>
+
+           <button type="submit">Submit</button>
+        </form>
+    </div>    
+</body>
+</html>
