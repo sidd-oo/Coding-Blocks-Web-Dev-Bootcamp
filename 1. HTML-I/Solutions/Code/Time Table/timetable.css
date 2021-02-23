@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1{
+color: darkblue;
+padding: 30px 0px 0px 0px;
+
+
+}
+
+.container{
+    border:darkblue 5px solid;
+    margin:0 20%;
+}
+
+table{
+    background-color: rgb(212, 231, 243);
+    border: blue;
+}
+
+th, td {
+    padding: 10px 10px;
+}
+
+th, .weekdays{
+    background-color:rgb(59, 59, 161);
+    color: white;
+    font-size: 20px;;
+}
+
+td{
+    font-size: 15px;
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#break{
+    background-color: rgb(186, 245, 23);
+    color: darkred;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#notice{
+    background-color: darkgrey;
+}
