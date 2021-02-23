@@ -1,0 +1,94 @@
+*{
+    background-color: rgb(201, 217, 245);
+    box-sizing: border-box;
+    color: darkblue;
+}
+
+input{
+    border: darkblue 1px solid;
+    border-radius: 3%;
+}
+
+label{
+    font-family:sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+.labels-inputs{
+    text-align: center;
+}
+
+fieldset{
+    margin: 20px 60px;
+    border: darkblue solid 2px;
+}
+
+
+h1{
+    font-size: 35px;
+    color:darkblue;
+    text-align: center;
+}
+input, label{
+    padding:5px 5px;
+}
+
+label{
+    margin: 10px 5px 0px 5px;
+}
+
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+table > tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+legend{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: darkblue;
+    font-weight: bolder;
+}
+
+table{
+    text-align: center;
+    margin-left: 50px;
+}
+
+button{
+  margin: 10px 45% 20px;
+  padding: 6px 12px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: #18a1d3;
+  color: white;
+  border: none;
+  box-shadow: 1px 5px rgb(36, 110, 179);
+}
+
+button:hover {
+    background-color: #007dab;
+    transform: scale(1.1);
+  }
+
+button:active{
+    background-color: #007dab;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+form{
+    border: darkblue 2px solid;
+    border-radius: 1%;
+}
+
+
+

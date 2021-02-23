@@ -15,50 +15,70 @@
         <form action="" method="GET">
            <fieldset>
                 <legend>Personal Details</legend>
-                <label for="FirstName">First Name :</label>
-                <input type="text" placeholder="Enter your first name" name="FirstName" required>
-                <br>
+                <div class = "labels-inputs">
+                    
+                <div class = "flex-box">
+                    <label for="FirstName">First Name :
+                    <input type="text" placeholder="Enter your first name" id="FirstName" required>
+                    </label>
+                    <br>
 
-                <label for="LastName">Last Name :</label>
-                <input type="text" placeholder="Enter your last name" name="LastName" required>
-                <br>
+                    <label for="LastName">Last Name :
+                    <input type="text" placeholder="Enter your last name" id="LastName" required>
+                    </label>
+                    <br>
+                </div>
 
-                <label for="Gender">Gender :</label>
-                <input type="radio" name="Gender">
-                Male
-                <input type="radio" name="Gender">
-                Female
-                <input type="radio" name="Gender">
-                Others
-                <br>
+                <div class = "flex-box">
+                    <label for="Gender">Gender :
+                    <input type="radio" id="Gender">
+                    Male
+                    <input type="radio" id="Gender">
+                    Female
+                    <input type="radio" id="Gender">
+                    Others
+                    </label>
+                    <br>
 
-                <label for="DOB">Date of Birth :</label>
-                <input type="date" placeholder="Select your Date" name="DOB" required>
-                <br>
+                    <label for="DOB">Date of Birth :
+                    <input type="date" placeholder="Select your Date" id="DOB" required>
+                    </label>
+                    <br>
 
-                <label for="Nationality">Nationality :</label>
-                <select name="Nationality" id="">
-                    <option value="Indian">Indian</option>
-                    <option value="NRI">NRI</option>
-                </select>
-                <br>
+                </div>
 
 
-                <label for="Email">Email :</label>
-                <input type="text" placeholder="Enter your email" name="Email" required>
-                <br>
+                <div class = "flex-box">               
+                    <label for="Email">Email :
+                    <input type="text" placeholder="Enter your email" id="Email" required>
+                    </label>
+                    <br>
 
-                <label for="Phone">Phone number :</label>
-                <input type="tel" placeholder="Enter your 10-digit phone number" required>
-                <br>
+                    <label for="Phone">Phone number :
+                    <input type="tel" placeholder="Enter your 10-digit phone number" id = "Phone" required>
+                    </label>
+                    <br>
+                </div>
+                
+                <div class = "flex-box">
+                    <label for="Address">Address
+                <textarea id="Address" id="" cols="100" rows="1">Enter your Address</textarea>
+                </label>
 
-                <label for="Address">Address</label>
-                <textarea name="Address" id="" cols="30" rows="5">Enter your Address</textarea>
+                <label for="Nationality">Nationality :
+                    <select id="Nationality" id="">
+                        <option value="Indian">Indian</option>
+                        <option value="NRI">NRI</option>
+                    </select>
+                    </label>
+                    <br>
+                </div>
+
             </fieldset>
 
            <fieldset>
                <legend>Academic Details</legend>
-               <table cellspacing ="5px" cellpadding= "5px">
+               <table cellspacing ="5px" cellpadding= "5px" class = "labels-inputs">
                    <thead>
                        <tr>
                            <th>Name of institution</th>
@@ -100,24 +120,31 @@
 
            <fieldset>
                <legend>Social Handles</legend>
-               <label for="LinkedIn">LinkedIn :</label>
-               <input type="text" placeholder="Enter your LinkedIn username" name = "LinkedIn" required>
+               <div class = "labels-inputs flex-box">
+                <label for="LinkedIn">LinkedIn :
+               <input type="text" placeholder="Enter your LinkedIn username" id = "LinkedIn" required>
+               </label>
                <br>
                
-               <label for="Github">Github :</label>
-               <input type="text" placeholder="Enter your Github username" name = "Github" required>
+               <label for="Github">Github :
+               <input type="text" placeholder="Enter your Github username" id = "Github" required>
+               </label>
                <br>
 
-               <label for="Dribble">Dribble :</label>
-               <input type="text" placeholder="Enter your Dribble username" name = "Dribble" required>
+               <label for="Dribble">Dribble :
+               <input type="text" placeholder="Enter your Dribble username" id = "Dribble" required>
+               </label>
+               </div>
            </fieldset>
 
            <fieldset>
                <legend>Declaration</legend>
-                <input type="checkbox" required>
-                <label for="agree-disagree">Agree: I do, hereby, declare all the above information is true. I will be help responsible if any of the information provided turn out to be false.</label>
-                
+                <div class = "labels-inputs">
+                    <input type="checkbox" id = "agree-disagree" required>
+                     <label for="agree-disagree">Agree: I do, hereby, declare all the above information is true. I will be help responsible if any of the information provided turn out to be false.</label>
+                     
                 <br>
+                </div>
            </fieldset>
 
            <button type="submit">Submit</button>
