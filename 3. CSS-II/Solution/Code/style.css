@@ -14,7 +14,7 @@ main{
 }
 
 .glass{
-    min-height:80vh;
+    max-height:80vh;
     width: 60%;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     border-radius: 2rem;
@@ -86,23 +86,36 @@ input{
 .cards{
     margin: 5rem;
     display: flex;
-    
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
+    
 }
 
 .card-info{
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
     border-radius: 0.6rem;
     margin-top: 10px;
     padding:10px;
     color: #278492;
+    width:100%;
+    box-shadow: 0.2px 0.2px 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    
+}
+
+.card-info img{
+    width:50px;
+    height: 50px;
+}
+ 
+.card-info p{
+    padding: 24px;
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 
 .card-info h1{
-    font-size: 25px;
+    font-size: 30px;
 }
