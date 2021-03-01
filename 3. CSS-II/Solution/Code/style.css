@@ -84,11 +84,14 @@ input{
 }
 
 .cards{
-    margin: 5rem;
+    margin: 30px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;   
+    overflow: auto;
+    max-height: 60%;
+    padding: 60px 60px;
     
 }
 
