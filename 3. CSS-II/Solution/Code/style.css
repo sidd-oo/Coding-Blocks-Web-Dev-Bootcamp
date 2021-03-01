@@ -1,25 +1,108 @@
-#header{
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    min-height:80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index:3;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+.circle1{
+    height: 15rem;
+    width: 15rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    position: absolute;
+    top:5%;   
+    left:5%;
+    border-radius: 50%;
+    z-index:1;
+}
+
+.circle2{
+    height: 10rem;
+    width: 10rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    position: absolute;
+    top:50%;   
+    right:5%;
+    border-radius: 50%;
+    z-index:1;
+}
+
+.dashboard{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 20px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
 }
 
-#container{
-    overflow: scroll;
-    margin: 50px auto;
-    width: 300px;
-    height: 450px;
-    border: 3px solid black;
+
+img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border:white 3px solid;
+    margin: 10px;
 }
 
-.stick-title{
-    position: sticky;
-    top:0px;
-    left: 0px;
-    background-color: cornflowerblue;
-    color: darkblue;
-    font-size: 20px;
+.ContactView{
+    flex:2;
+}
+
+.heading{
+    font-size: 2rem;;
     font-weight: 600;
-    list-style:none;
+    margin: 15px 0px 5px 15px;
+    color: #1d7481;
+    padding:0px
+}
+
+input{
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    width:350px;
+    border:none;
+    border-radius: 2rem;
+}
+
+.cards{
+    margin: 5rem;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-info{
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+    border-radius: 0.6rem;
+    margin-top: 10px;
+    padding:10px;
+    color: #278492;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-info h1{
+    font-size: 25px;
 }
