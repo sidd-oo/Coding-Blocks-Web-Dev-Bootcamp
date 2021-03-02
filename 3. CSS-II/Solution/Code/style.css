@@ -157,3 +157,30 @@ input{
 .card-info h1{
     font-size: 30px;
 }
+
+
+footer{
+    position:absolute;
+    bottom:0%;
+
+    font-size: 18px;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    color: #07343b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+}
+
+a{
+    color:#07343b;
+    text-decoration: none;
+}
+
+span{
+    color:red;
+    font-size: larger;
+    font-weight: 900;
+}
