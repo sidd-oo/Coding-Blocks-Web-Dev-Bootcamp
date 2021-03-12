@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg,#80d7f6, #097aa3);
+}
+
+button{
+  margin: 10px auto;
+  padding: 6px 12px;
+  font-size: 30px;
+  border-radius: 15px;
+  background-color: #3fcbfd;
+  color: white;
+  border: none;
+  box-shadow: 5px 5px rgb(22, 76, 126);
+}
+
+button:hover {
+    background-color: #007dab;
+    transform: scale(1.1);
+  }
+
+button:active{
+    transform: scale(1.2);
+    background-color: #1a586e;
+    box-shadow: 0 3px rgb(24, 6, 65);
+}
