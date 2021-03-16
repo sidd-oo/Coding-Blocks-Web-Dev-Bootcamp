@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.background {
+    display: inline-block;
+    background: linear-gradient(45deg, white 50%, rgb(4, 56, 4) 50%);
+    width: 100vw;
+    height: 200vh;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+.smallBackground{
+    background: white;
+    border:rgb(4, 56, 4) 1px solid;
+    width: 85%;
+    height: 100%;
+    padding: 20px 20px 20px 20px;
+    position: absolute;
+    top:90px;
+    left:100px;
+}
+
+.logo{
+    width: 7rem;
+    height: 7rem;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 80px;
+    font-size: 23px;
+    color:rgb(4, 56, 4);
+    font-weight: 900;
+}
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+main{
+    margin-top:7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article {
+    margin-left:50px;
+    font-size: 34px;
+}
+
+span {
+    font-size: 50px;
+    color: rgb(4, 56, 4);
+    font-weight: 900;
+}
+
+main article p{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+main article a{
+    background: darkgreen;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 300;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 1px 9px 1px 9px;
+}
+
+.green-white-circle{
+    width:25rem;
+    height:25rem;
+    border-top: darkgreen solid 70px;
+    border-bottom: rgb(4, 56, 4) solid 70px;
+    border-left: rgb(4, 56, 4) solid 70px;
+    border-right: darkgreen solid 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 220px;
+    right:70px;
+    animation: spin 6s linear 1s infinite alternate;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotateZ(360deg);
+    }
+}
+
+.image-slider{
+    animation: backgroundChange 3s linear 1s infinte alternate-reverse;
+    position: absolute;
+    width:300px;
+    height:450px;
+    top:170px;
+    right:120px;
+    z-index:1;
+    border:3px #ccc solid;
+}
+
+@keyframes backgroundChange{
+    0%{
+        background-image: url('./images/img1.png');
+    }
+    50%{
+        background-image: url('./images/img2.png');
+    }
+    100%{
+        background-image: url('./images/img3.png');
+    }
+}
