@@ -23,7 +23,7 @@
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     width: 85%;
-    height: 300%;
+    height: 400%;
     padding: 20px 20px 20px 20px;
     position: absolute;
     top:90px;
@@ -47,13 +47,22 @@ header{
 }
 
 ul{
+    margin-right: 80px;
+}
+
+a{
     text-decoration: none;
     list-style: none;
-    margin-right: 80px;
-    font-size: 23px;
+    font-size: 30px;
     color:rgb(4, 56, 4);
     font-weight: 900;
+   
 }
+
+li:hover{
+    transform: scale(1.1);    
+}
+
 
 li{
     display: inline-block;
@@ -161,18 +170,10 @@ main article a{
 /* -----------------------------About Us---------------------- */
 
 .AboutUs{
-    margin-top: 180px;
+    margin-top: 270px;
     position: relative;
 }
 
-/* .aboutUsBackground{
-    background:rgb(203, 241, 203);
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:100wh;
-    height:100vh;
-} */
 
 .green-white-circle2{
     width:25rem;
@@ -270,24 +271,23 @@ main article a{
 /* ----------------------whats new ----------------- */
 
 .WhatsNew{
-    margin-top: 180px;
+    margin-top: 250px;
     position: relative;
 }
 
 .image-carousel{
     position: absolute;
-    top:600px;
+    top:700px;
     left:0px;
     background-image: url(./images/2.png);
     background-size: 100% ;
-    box-shadow: 3px 3px 10px grey;
+    box-shadow: 3px 3px 15px rgb(4, 56, 4);
     width:100%;
     height:65vh;
     animation: carousel-slide 9s infinite linear;
 }
 
 @keyframes carousel-slide{
-
     0%{
         background-image: url(./images/2.png); 
         background-size: 100%;
@@ -308,3 +308,103 @@ main article a{
         background-repeat: no-repeat;
     }
 }
+
+/* ------------------ContactUS------------------ */
+
+.contactUs{
+    margin-top: 100px;
+    position: relative;
+}
+
+.contact-info{
+    position:absolute;
+    top:1400px;
+    left:30px;
+    background: white;
+    width:40%;
+    height:400px;
+    z-index:1;
+    /* border-radius: 5%; */
+    box-shadow: 2px 2px 20px grey;
+    text-align: center;
+}
+
+.contact-info h1{
+    color:rgb(4, 56, 4);
+    font-size: 34px;
+    font-weight: 900;
+    padding-top:15px;
+}
+
+.contact-info span{
+    color:rgb(4, 56, 4);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 75px;
+}
+
+.contact-info p{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 70px;
+}
+
+.socials{
+    margin-left: 65px;
+    padding-top: 10px;
+}
+
+.socials li:hover{
+    transform: scale(1.2);
+}
+.form{
+    position:absolute;
+    top:1350px;
+    left:80px;
+    background:rgb(4, 56, 4);
+    width:90%;
+    height:500px;
+    color:whitesmoke;
+    box-shadow: 2px 2px 55px black;
+}
+
+.form h1{
+    color:white;
+    font-size: 34px;
+    font-weight: 900;
+    padding-top:45px;
+    margin-left:520px;
+}
+
+.form div{
+    color:white;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+.form span{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.form input, textarea{
+    width:80%;
+}
+
+button{
+  margin: -30px 0px 0px 150px;
+  padding: 3px 5px;
+  font-size: 25px;
+  border-radius: 15px;
+  background-color:  #29530e;
+  color: white;
+  border: none;
+  box-shadow: 3px 3px rgb(223, 236, 223);
+}
+
+button:hover {
+    background-color: #3a7217;
+    transform: scale(1.1);
+  }

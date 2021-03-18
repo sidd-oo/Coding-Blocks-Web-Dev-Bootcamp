@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png" type="image/png" sizes="16x16">
     <title>Responsive Webpage</title>
 </head>
 <body>
-    <div class = "background">
+    <div class = "background" id ="home">
     </div>
 
-    <div class="smallBackground">
+    <div class="smallBackground" >
         <header>
             <img src="./images/logo.png" alt="logo" class = "logo">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>What's new ?</li>
-                <li>Contact</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#whatsnew">What's new ?</a></li>
+                <li><a href="#contactus">Contact</a></li>
             </ul>
         </header>
-        <section>
+        <section >
 
             <main>
                 <article>
@@ -37,8 +38,8 @@
              <div class = "green-white-circle">
             </div>
         </section>
-        <section class = "AboutUs">
-                <!-- <div class="aboutUsBackground"></div> -->
+
+        <section class = "AboutUs" id ="aboutus">
                 <div class = "green-white-circle2"></div>
                 <div class = "re-image-slider"></div>
                 <div class = "text">
@@ -54,16 +55,64 @@
                     </p> 
                 </div>
         </section>
-        <section class = "WhatsNew">
-            <div class = "image-carousel"></div>
+        
+        <section class = "WhatsNew" >
+            <div class = "image-carousel" id ="whatsnew"></div>
         </section>
 
-        <section class = "contactUs">
+        <section class = "contactUs" >
+            <div class = "contact-info">
+                <h1>Contact Info</h1>
+                <ul>
+                    <li>
+                        <span>Address</span>
+                        <p>121 Down Street, Fort Mumbai, Maharastra, India</p>
+                    </li>
+                    <br>
+                    <li>
+                        <span>Email</span>
+                        <p>lorem@ipsume.com</p>
+                    </li>
+                    <br>
+                    <li>
+                        <span>Phone number</span>
+                        <p>9845627077</p>
+                    </li>
+                </ul>
+                <ul class = "socials">
+                    <li><img src="./images/instagram.png" alt=""></li>
+                    <li><img src="./images/facebook.png" alt=""></li>
+                    <li><img src="./images/twitter.png" alt=""></li>
+                </ul>
+            </div>
+            <div class = "form" id ="contactus">
+                <h1>Write your message</h1>
+                <div class = "textbox w50">
+                    <span>First Name: </span>
+                    <input type="text" name = "" required>
+                </div>
+                <div class = "textbox w50">
+                    <span>Last Name: </span>
+                    <input type="text" name = "" required>
+                </div>
+                <div class = "textbox w50">
+                    <span>Email: </span>
+                    <br>
+                    <input type="text" name = "" required>
+                </div>
+                <div class = "textbox w100">
+                    <span>Message: </span>
+                    <br>
+                    <textarea name="" col = "10" row ="5" id=""required></textarea>
+                </div>
+                <div>
+                    <button type = "submit">Submit</button>
+                </div>
+            </div>
             
         </section>
     </div>
 
-    
 </body>
 </html>
 
